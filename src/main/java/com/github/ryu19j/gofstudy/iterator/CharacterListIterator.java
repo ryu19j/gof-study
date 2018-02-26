@@ -1,6 +1,6 @@
 package com.github.ryu19j.gofstudy.iterator;
 
-public class CharacterListIterator implements Iterator {
+public class CharacterListIterator implements Iterator<Character> {
 
 	private CharacterList characterList;
 
@@ -21,7 +21,7 @@ public class CharacterListIterator implements Iterator {
 	}
 
 	@Override
-	public Object next() {
+	public Character next() {
 		Character character = characterList.get(index);
 		index++;
 		return character;

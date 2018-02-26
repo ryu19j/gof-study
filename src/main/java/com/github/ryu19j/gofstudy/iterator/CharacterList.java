@@ -1,6 +1,6 @@
 package com.github.ryu19j.gofstudy.iterator;
 
-public class CharacterList implements Aggregate {
+public class CharacterList implements Aggregate<Character> {
 
 	private Character[] characterList;
 
@@ -24,7 +24,7 @@ public class CharacterList implements Aggregate {
 	}
 
 	@Override
-	public Iterator iterator() {
+	public Iterator<Character> iterator() {
 		return new CharacterListIterator(this);
 	}
 

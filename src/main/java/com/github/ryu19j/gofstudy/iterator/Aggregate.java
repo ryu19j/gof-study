@@ -1,7 +1,7 @@
 package com.github.ryu19j.gofstudy.iterator;
 
-public interface Aggregate {
+public interface Aggregate<T> {
 
-	public Iterator iterator();
+	public Iterator<T> iterator();
 
 }
