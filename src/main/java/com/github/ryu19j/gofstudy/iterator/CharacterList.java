@@ -25,7 +25,7 @@ public class CharacterList implements Aggregate {
 
 	@Override
 	public Iterator iterator() {
-		return null;
+		return new CharacterListIterator(this);
 	}
 
 }
