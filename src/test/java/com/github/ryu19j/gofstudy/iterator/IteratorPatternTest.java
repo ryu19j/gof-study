@@ -16,14 +16,20 @@ public class IteratorPatternTest {
 
 		Iterator<Character> iter = characterList.iterator();
 
+		assertThat(iter.hasNext(), is(true));
 		Character character1 = iter.next();
 		assertThat(character1.getName(), is("リュウ"));
 
+		assertThat(iter.hasNext(), is(true));
 		Character character2 = iter.next();
 		assertThat(character2.getName(), is("ケン"));
 
+		assertThat(iter.hasNext(), is(true));
 		Character character3 = iter.next();
 		assertThat(character3.getName(), is("サガット"));
+
+		assertThat(iter.hasNext(), is(false));
+
 	}
 
 }
